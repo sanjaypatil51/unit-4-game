@@ -1,0 +1,9 @@
+body{
+    background:transparent url("../../assets/images/background.png");
+    background-repeat: repeat-y;
+    background-size:740px;
+
+}
+body, html,.container{
+    width:740px;
+}
