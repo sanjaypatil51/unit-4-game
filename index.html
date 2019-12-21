@@ -15,15 +15,56 @@
 </head>
 
 <body>
-<div class="container">
+    <div class="container">
 
-<div class="row">
-    <div class="col-sm-12">
-        <h1>test</h1>
+        <div class="row">
+            <div class="col-md-5">
+                <h2>Crystal Collectors!</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <p class="instructions">You will be given random number at the start of the game.<br><br>
+                    There are four crystals below. By clicking on a crystal you will add a specific amount of points to
+                    your total scores.<br><br>
+                    You win the game by matching your total scores to random number, you lose the game if your total
+                    score above the random number.<br><br>
+                    The value of each crystal is hidden from you until you click on it.<br><br>
+                    Each time when the game start, the game will change the values of each crystal.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 random-num">
+                <p>random-num</p>
+            </div>
+            <div class="col-md-2 win-los">
+                <div class="row won">
+                    <p>win</p>
+                </div>
+                <div class="row lost">
+                    <p>loss</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <img class="red-crystal img-fluid h-100" src="assets/images/red.png">
+                <img class="blue-crystal img-fluid h-100" src="assets/images/blue.png">
+                <img class="yellow-crystal img-fluid h-100" src="assets/images/yellow.png">
+                <img class="green-crystal img-fluid h-100" src="assets/images/green.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 score-card">
+                <h5>Your Score is</h5>
+                <p class="score">0</p>
+            </div>
+        </div>
+
     </div>
-</div>
-
-</div>
 </body>
 <script src="assets/javascript/game.js"></script>
+
 </html>
