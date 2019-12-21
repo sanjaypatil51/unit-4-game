@@ -1,11 +1,11 @@
 body{
-    background:transparent url("../../assets/images/background.png");
-    background-repeat: repeat-y;
-    background-size:740px;
-
-}
-body, html,.container{
     width:740px;
+}
+
+.container{
+    width:740px;
+    background:transparent url("../../assets/images/background.png");
+    border:1px solid black;
 }
 h2{
     background:burlywood;
@@ -19,17 +19,18 @@ h2{
 }
 .random-num{
     background:green;
-    margin-left:15px;
-    margin-right:5px;
+    margin-left:15px;    
     margin-bottom:5px;
     
 }
 .win-los{
     background:skyblue;
     margin-bottom:5px;
+    margin-left:15px;
 }
 .score-card{
     margin-top:5px;
     margin-left:15px;
-    background:lightgreen
+    background:lightgreen;
+    margin-bottom:5px;
 }
