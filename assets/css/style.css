@@ -35,13 +35,13 @@ h2{
     margin-bottom:5px;
 }
 
-#red-crystal:hover, #blue-crystal:hover, #yellow-crystal:hover, #green-crystal:hover{
+/*#red-crystal:hover, #blue-crystal:hover, #yellow-crystal:hover, #green-crystal:hover{
   animation-name: imgrotate;
   animation-fill-mode: both;
   animation-iteration-count: infinite;
   animation-duration: 5s;
   animation-direction: alternate;
-}
+}*/
 
 @keyframes imgrotate {
    0%{transform:rotate3d(1, 1, 1, 360deg)

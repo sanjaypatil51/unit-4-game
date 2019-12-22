@@ -21,7 +21,7 @@ function reset() {
     count = 0
     score = 0
     getRandomNum()
-    crystalRandomNum()   
+    crystalRandomNum()
     $(".score").text("0")
 
 }
@@ -51,14 +51,20 @@ $(".crystal").click(function (event) {
     if (score > count) {
         loss++
         $("#loss").text(loss)
-        alert("You Lost")
-        reset()
+        setTimeout(function () {
+            alert("You Lost")
+            reset()
+        }, 100);
+
+
     }
     else if (score == count) {
         win++
         $("#win").text(win)
-        alert("You Won")
-        reset()
+        setTimeout(function () {
+            alert("You Won")
+            reset()
+        }, 100);
     }
 
 
