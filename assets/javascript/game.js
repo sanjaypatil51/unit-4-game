@@ -17,6 +17,15 @@ function crystalRandomNum() {
 
 }
 
+function reset() {
+    count = 0
+    score = 0
+    getRandomNum()
+    crystalRandomNum()   
+    $(".score").text("0")
+
+}
+
 getRandomNum()
 crystalRandomNum()
 
@@ -43,24 +52,20 @@ $(".crystal").click(function (event) {
         loss++
         $("#loss").text(loss)
         alert("You Lost")
-        getRandomNum()
-        crystalRandomNum()
-        $(".score").empty()
+        reset()
     }
     else if (score == count) {
         win++
         $("#win").text(win)
         alert("You Won")
-        getRandomNum()
-        crystalRandomNum()
-        $(".score").empty()
-
+        reset()
     }
-})
+
+
+}
+)
 
 $(".btn").click(function () {
-    getRandomNum()
-    crystalRandomNum()
-    $(".score").empty()
+    reset()
 
 })
